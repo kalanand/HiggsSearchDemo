@@ -1,0 +1,183 @@
+Executable = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/Limits/batchit.sh
+Universe = vanilla
+Requirements = Memory > 250 && FileSystemDomain=="fnal.gov" && Disk > 500000 && Arch=="X86_64"
+Notification = ERROR
+Should_Transfer_Files = YES
+transfer_input_files =/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/MyRunElecBatch.C,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/kanaelec_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/Resolution_cc.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//src/METzCalculator_cc.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//src/QGLikelihoodCalculator_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/EffTableReader_cc.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/EffTableLoader_cc.so,,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_170_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_180_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_190_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_200_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_250_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_300_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_350_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_400_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_450_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_500_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_550_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_600_nJ2_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_170_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_180_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_190_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_200_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_250_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_300_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_350_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_400_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_450_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_500_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_550_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_600_nJ3_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_170_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_180_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_190_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_200_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_250_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_300_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_350_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_400_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_450_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_500_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_550_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_600_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_126_VBF_el_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_400_nJ2_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_400_nJ2_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_400_nJ2_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_450_nJ2_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_450_nJ2_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_450_nJ2_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_500_nJ2_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_500_nJ2_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_500_nJ2_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_550_nJ2_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_550_nJ2_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_550_nJ2_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_600_nJ2_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_600_nJ2_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_600_nJ2_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_700_nJ2_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_700_nJ2_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_700_nJ2_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_800_nJ2_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_800_nJ2_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_800_nJ2_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_900_nJ2_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_900_nJ2_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_900_nJ2_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_1000_nJ2_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_1000_nJ2_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_1000_nJ2_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_400_nJ3_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_400_nJ3_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_400_nJ3_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_450_nJ3_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_450_nJ3_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_450_nJ3_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_500_nJ3_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_500_nJ3_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_500_nJ3_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_550_nJ3_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_550_nJ3_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_550_nJ3_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_600_nJ3_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_600_nJ3_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_600_nJ3_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_700_nJ3_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_700_nJ3_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_700_nJ3_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_800_nJ3_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_800_nJ3_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_800_nJ3_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_900_nJ3_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_900_nJ3_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_900_nJ3_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_1000_nJ3_el_interferencedown_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_1000_nJ3_el_interferencenominal_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_1000_nJ3_el_interferenceup_Likelihood.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_noqg_nJ2_el_BDT.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_withqg_nJ2_el_BDT.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_noqg_nJ3_el_BDT.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/ClassifierOut/TMVAClassification_withqg_nJ3_el_BDT.class_C.so,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/InterferenceTable2012/ratio1000.txt,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/EffTable2012/scaleFactor-Run2012ABCD-GsfElectronToId.txt,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/EffTable2012/scaleFactor-Run2012ABCD-SCToElectron.txt,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/EffTable2012/efficiency-Run2012ABCD-WP80ToHLTEle.txt,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/EffTable2012/FullyEfficient.txt,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/EffTable2012/FullyEfficient_Jet2NoJet1.txt,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/EffTable2012/FullyEfficient_MHT.txt,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/Data190456-208686_PileupHistogram.root,/uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets//test/sampledb2012.txt
+WhenToTransferOutput = ON_EXIT
+Error = kanaelec_20120001.stderr
+Output = kanaelec_20120001.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20120001,0,0)
+Queue
+Error = kanaelec_20120002.stderr
+Output = kanaelec_20120002.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20120002,0,0)
+Queue
+Error = kanaelec_20121002.stderr
+Output = kanaelec_20121002.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121002,0,0)
+Queue
+Error = kanaelec_20121003.stderr
+Output = kanaelec_20121003.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121003,0,0)
+Queue
+Error = kanaelec_20121004.stderr
+Output = kanaelec_20121004.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121004,0,0)
+Queue
+Error = kanaelec_20121005.stderr
+Output = kanaelec_20121005.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121005,0,0)
+Queue
+Error = kanaelec_20121006.stderr
+Output = kanaelec_20121006.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121006,0,0)
+Queue
+Error = kanaelec_20121007.stderr
+Output = kanaelec_20121007.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121007,0,0)
+Queue
+Error = kanaelec_20121010.stderr
+Output = kanaelec_20121010.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121010,0,0)
+Queue
+Error = kanaelec_201210201.stderr
+Output = kanaelec_201210201.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(201210201,0,0)
+Queue
+Error = kanaelec_201210202.stderr
+Output = kanaelec_201210202.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(201210202,0,0)
+Queue
+Error = kanaelec_20121021.stderr
+Output = kanaelec_20121021.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121021,0,0)
+Queue
+Error = kanaelec_20121022.stderr
+Output = kanaelec_20121022.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121022,0,0)
+Queue
+Error = kanaelec_20121023.stderr
+Output = kanaelec_20121023.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121023,0,0)
+Queue
+Error = kanaelec_20121024.stderr
+Output = kanaelec_20121024.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121024,0,0)
+Queue
+Error = kanaelec_201210241.stderr
+Output = kanaelec_201210241.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(201210241,0,0)
+Queue
+Error = kanaelec_20121030.stderr
+Output = kanaelec_20121030.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121030,0,0)
+Queue
+Error = kanaelec_20121031.stderr
+Output = kanaelec_20121031.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121031,0,0)
+Queue
+Error = kanaelec_20121032.stderr
+Output = kanaelec_20121032.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121032,0,0)
+Queue
+Error = kanaelec_20121040.stderr
+Output = kanaelec_20121040.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20121040,0,0)
+Queue
+Error = kanaelec_20122170.stderr
+Output = kanaelec_20122170.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122170,0,0)
+Queue
+Error = kanaelec_20122180.stderr
+Output = kanaelec_20122180.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122180,0,0)
+Queue
+Error = kanaelec_20122190.stderr
+Output = kanaelec_20122190.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122190,0,0)
+Queue
+Error = kanaelec_20122200.stderr
+Output = kanaelec_20122200.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122200,0,0)
+Queue
+Error = kanaelec_20122250.stderr
+Output = kanaelec_20122250.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122250,0,0)
+Queue
+Error = kanaelec_20122300.stderr
+Output = kanaelec_20122300.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122300,0,0)
+Queue
+Error = kanaelec_20122350.stderr
+Output = kanaelec_20122350.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122350,0,0)
+Queue
+Error = kanaelec_20122400.stderr
+Output = kanaelec_20122400.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122400,0,0)
+Queue
+Error = kanaelec_20122450.stderr
+Output = kanaelec_20122450.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122450,0,0)
+Queue
+Error = kanaelec_20122500.stderr
+Output = kanaelec_20122500.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122500,0,0)
+Queue
+Error = kanaelec_20122550.stderr
+Output = kanaelec_20122550.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122550,0,0)
+Queue
+Error = kanaelec_20122600.stderr
+Output = kanaelec_20122600.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20122600,0,0)
+Queue
+Error = kanaelec_20123170.stderr
+Output = kanaelec_20123170.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123170,0,0)
+Queue
+Error = kanaelec_20123180.stderr
+Output = kanaelec_20123180.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123180,0,0)
+Queue
+Error = kanaelec_20123190.stderr
+Output = kanaelec_20123190.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123190,0,0)
+Queue
+Error = kanaelec_20123200.stderr
+Output = kanaelec_20123200.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123200,0,0)
+Queue
+Error = kanaelec_20123250.stderr
+Output = kanaelec_20123250.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123250,0,0)
+Queue
+Error = kanaelec_20123300.stderr
+Output = kanaelec_20123300.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123300,0,0)
+Queue
+Error = kanaelec_20123350.stderr
+Output = kanaelec_20123350.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123350,0,0)
+Queue
+Error = kanaelec_20123400.stderr
+Output = kanaelec_20123400.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123400,0,0)
+Queue
+Error = kanaelec_20123450.stderr
+Output = kanaelec_20123450.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123450,0,0)
+Queue
+Error = kanaelec_20123500.stderr
+Output = kanaelec_20123500.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123500,0,0)
+Queue
+Error = kanaelec_20123550.stderr
+Output = kanaelec_20123550.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123550,0,0)
+Queue
+Error = kanaelec_20123600.stderr
+Output = kanaelec_20123600.stdout
+Arguments = /uscms/home/kalanand/physics/vplusjets/CMSSW_5_3_15_patch1/src/ElectroWeakAnalysis/VPlusJets/ root -n -b -q -l MyRunElecBatch.C(20123600,0,0)
+Queue
