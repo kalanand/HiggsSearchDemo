@@ -1,0 +1,105 @@
+__        ___           _     _       _ _     ___ 
+\ \      / / |__   __ _| |_  (_)___  (_) |_  |__ \
+ \ \ /\ / /| '_ \ / _` | __| | / __| | | __|   / /
+  \ V  V / | | | | (_| | |_  | \__ \ | | |_   |_| 
+   \_/\_/  |_| |_|\__,_|\__| |_|___/ |_|\__|  (_) 
+                                                  
+"HiggsSearchDemo" is a collection of few simple Python scripts to 
+analyze data from the Large Hadron Collider (CMS experiment) to 
+search for the Higgs boson in the decay H->WW.
+
+
+ _____           _                     _                 _ 
+|_   _|__     __| | _____      ___ __ | | ___   __ _  __| |
+  | |/ _ \   / _` |/ _ \ \ /\ / / '_ \| |/ _ \ / _` |/ _` |
+  | | (_) | | (_| | (_) \ V  V /| | | | | (_) | (_| | (_| |
+  |_|\___/   \__,_|\___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|
+                                                           
+
+git clone https://github.com/kalanand/HiggsSearchDemo
+
+
+
+ _   _                 _                           
+| | | | _____      __ | |_ ___    _ __ _   _ _ __  
+| |_| |/ _ \ \ /\ / / | __/ _ \  | '__| | | | '_ \ 
+|  _  | (_) \ V  V /  | || (_) | | |  | |_| | | | |
+|_| |_|\___/ \_/\_/    \__\___/  |_|   \__,_|_| |_|
+                                                   
+
+There are three basic steps to the LHC data analysis. 
+
+Step 1: Run over the entire data, filter interesting events, and store 
+	 their contents in Ntuple format. The goal of this step is to identify 
+	 events with two W bosons and store all necessary information needed 
+	 for physics analysis. The event should contain an electron or muon, 
+	 large missing energy due to an escaped neutrino, and at least two high 
+	 energy particle jets. We run this step as a large number of parallel 
+	 jobs on Condor batch machines
+
+	 condor_submit submitmu.txt
+	 condor_submit submitel.txt
+
+Step 2: Select signal-like events (i.e., "map reduce"). In this step we 
+	 perform a further 10^3 reduction in data size and select signal-like 
+	 events. We apply tight quality criteria specified in "skim.py" file 
+	 and drop information not needed for further analysis.
+	 
+	 python skim.py
+
+	
+Step 3: Perform Higgs search (i.e., "data analytics"). Now we analyze the 
+	 remaining events for any hints of Higgs signal. We plot the invariant 
+	 mass of the two W bosons. If Higgs boson decays to WW, then we would 
+	 expect a mass peak in this distribution corresponding to the Higgs 
+	 boson mass. Modify the analyzer script according to your needs and run:
+
+	 python analyze.py
+
+	 The default version of the script in this repository should produce 
+	 a plot of the m_WW distribution in data and compare it to the expected   
+	 background from simulation. The plot also shows the magnitude of 
+	 Higgs signal for a few hypothetical Higgs mass values.  
+	 We find that the data is consistent with background-only hypothesis. 
+	 Given the expected magnitude of Higgs signal, we can 
+	 exclude Higgs boson mass in the range 200-600 GeV with 95% confidence. 
+	 This is what we actually did with the early LHC data before eventually 
+	 discovering the Higgs boson at mass 125 GeV on July 4, 2012. 
+    
+
+
+ _____                           _              _       _       
+| ____|_  ____ _ _ __ ___  _ __ | | ___   _ __ | | ___ | |_ ___ 
+|  _| \ \/ / _` | '_ ` _ \| '_ \| |/ _ \ | '_ \| |/ _ \| __/ __|
+| |___ >  < (_| | | | | | | |_) | |  __/ | |_) | | (_) | |_\__ \
+|_____/_/\_\__,_|_| |_| |_| .__/|_|\___| | .__/|_|\___/ \__|___/
+                          |_|            |_|                    
+
+Please see: http://kmishra.net/AnalysisDemo
+
+
+ _____         _           _           _       _      _        _ _     
+|_   _|__  ___| |__  _ __ (_) ___ __ _| |   __| | ___| |_ __ _(_) |___ 
+  | |/ _ \/ __| '_ \| '_ \| |/ __/ _` | |  / _` |/ _ \ __/ _` | | / __|
+  | |  __/ (__| | | | | | | | (_| (_| | | | (_| |  __/ || (_| | | \__ \
+  |_|\___|\___|_| |_|_| |_|_|\___\__,_|_|  \__,_|\___|\__\__,_|_|_|___/
+                                                                       
+                                    
+Author : Kalanand Mishra
+Home Page : https://github.com/kalanand/HiggsSearchDemo
+Operating System : OS Independent
+Programming Language : Python 
+Intended Audience : High Energy Physics students 
+
+
+ _     _                         
+| |   (_) ___ ___ _ __  ___  ___ 
+| |   | |/ __/ _ \ '_ \/ __|/ _ \
+| |___| | (_|  __/ | | \__ \  __/
+|_____|_|\___\___|_| |_|___/\___|
+                                 
+HiggsSearchDemo is a free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 3 of the
+License or any later version: <http://www.gnu.org/licenses/>.
+This software is distributed WITHOUT ANY WARRANTY. 

@@ -1,4 +1,13 @@
 #!/usr/bin/env python
+
+## Copyright 2014 Kalanand Mishra
+
+## HiggsSearchDemo is a free software; you can redistribute it and/or
+## modify it under the terms of the GNU General Public License as
+## published by the Free Software Foundation; either version 3 of the
+## License or any later version: <http://www.gnu.org/licenses/>.
+## This software is distributed WITHOUT ANY WARRANTY. 
+
 import os,sys
 import string, re
 from time import gmtime, localtime, strftime
