@@ -27,7 +27,13 @@ git clone https://github.com/kalanand/HiggsSearchDemo
 |_| |_|\___/ \_/\_/    \__\___/  |_|   \__,_|_| |_|
                                                    
 
-There are three basic steps to the LHC data analysis. 
+There are three basic steps to the LHC data analysis (after step 0). 
+
+Step 0: Get familiar with "VPlusJets" package following instructions at 
+     https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideEWKVPlusJets
+     
+	 You do not necessarily need it for this demo, but the tree data structure  
+     is defined there.
 
 Step 1: Run over the entire data, filter interesting events, and store 
 	 their contents in Ntuple format. The goal of this step is to identify 
